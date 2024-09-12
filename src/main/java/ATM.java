@@ -19,10 +19,11 @@ public class ATM {
         int ones = (amountAfterFives / 1);
 
 
-        double totalCents = (amount - intAmount);
-        int intTotalCents = (int)(totalCents * 100);
-        int quarters = (intTotalCents / 25);
-        int amountAfterQuarters = (intTotalCents % 25);
+        double totalCents = (amount *100);
+        double doubleCents = totalCents - (intAmount*100);
+        int cents = (int)doubleCents;
+        int quarters = (cents / 25);
+        int amountAfterQuarters = (cents % 25);
         int dimes = (amountAfterQuarters / 10);
         int amountAfterDimes = (amountAfterQuarters % 10);
         int nickels = (amountAfterDimes / 5);
