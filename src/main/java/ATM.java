@@ -27,7 +27,7 @@ public class ATM {
         int amountAfterDimes = (amountAfterQuarters % 10);
         int nickels = (amountAfterDimes / 5);
         int amountAfterNickels = (amountAfterDimes % 5);
-        int pennies = (amountAfterNickels / 1);
+
 
         System.out.println(amount + " contains:");
         System.out.println( twenties + " in $20");
@@ -37,7 +37,7 @@ public class ATM {
         System.out.println( quarters + " in 25" + '\u00A2');
         System.out.println( dimes + " in 10" + '\u00A2');
         System.out.println(nickels + " in 5" + '\u00A2');
-        System.out.println( pennies + " in 1" + '\u00A2');
+        System.out.println( amountAfterNickels + " in 1" + '\u00A2');
 
 
 
